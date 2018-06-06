@@ -1,0 +1,75 @@
+{
+  "configVersion": 1,
+  "index": "/any-time-library/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/any-time-library/favicon.ico",
+        "/any-time-library/index.html",
+        "/any-time-library/inline.318b50c57b4eba3d437b.bundle.js",
+        "/any-time-library/main.b234f0c90c0edebc86fa.bundle.js",
+        "/any-time-library/polyfills.194f3db5c95bb635c66b.bundle.js",
+        "/any-time-library/styles.4a21725654b33d0b2245.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/any-time-library/assets/images/2106472575030520181218073914.pdf",
+        "/any-time-library/assets/images/bg-1.jpg",
+        "/any-time-library/assets/images/bg-2.jpg",
+        "/any-time-library/assets/images/defaultUser.png",
+        "/any-time-library/assets/images/icons/icon-150x150.png",
+        "/any-time-library/assets/images/icons/icon-16x16.png",
+        "/any-time-library/assets/images/icons/icon-192x192.png",
+        "/any-time-library/assets/images/icons/icon-32x32.png",
+        "/any-time-library/assets/images/icons/icon-512x512.png",
+        "/any-time-library/assets/images/library.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/any-time-library/assets/images/2106472575030520181218073914.pdf": "e4b08b9b6b33c4026513b8ba4474604f788a8f5c",
+    "/any-time-library/assets/images/bg-1.jpg": "67e1adee083aa6a3859c3a532d39228127338547",
+    "/any-time-library/assets/images/bg-2.jpg": "29b8e857742f1b26712709970288b490064ed25e",
+    "/any-time-library/assets/images/defaultUser.png": "e927c5410cf5d8fc6b3490cc5fb28489d345085e",
+    "/any-time-library/assets/images/icons/icon-150x150.png": "a5809f2b83ceac6054080d625b40e5689cfb8dd8",
+    "/any-time-library/assets/images/icons/icon-16x16.png": "acf795f8f455f7bfcec2034f1eb036ea27ca804e",
+    "/any-time-library/assets/images/icons/icon-192x192.png": "6264c2785797e5214b7078ffbb3d80798d4c79f0",
+    "/any-time-library/assets/images/icons/icon-32x32.png": "0b6c2374c9c530d1fa5e60541f0093bae7f48588",
+    "/any-time-library/assets/images/icons/icon-512x512.png": "33ddaf7a1a7df4e40a5266d40969c8ed8f0ba29c",
+    "/any-time-library/assets/images/library.jpg": "b8ea6cd2bb5a6c4686d35d74bf1069fbbd5350b3",
+    "/any-time-library/favicon.ico": "d4ede9a48bbdbfd387485d4429e490f5e745c9ec",
+    "/any-time-library/index.html": "ccba3cf3a79f85a17a3e3a378b0d89d87544b099",
+    "/any-time-library/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
+    "/any-time-library/main.b234f0c90c0edebc86fa.bundle.js": "41deae164c4f3664551d078aef320678b9e10603",
+    "/any-time-library/polyfills.194f3db5c95bb635c66b.bundle.js": "1efb43b628f58146c7d7c98e11c9b496244802da",
+    "/any-time-library/styles.4a21725654b33d0b2245.bundle.css": "0ab6ed1891e7a6a79e6a8fd73e9a660eb1b102e0"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
