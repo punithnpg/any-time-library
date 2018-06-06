@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" class="example-toolbar">
+  <h1 class="example-app-name app-name">Anytime Library</h1>
+  <div fxHide.xs="true" fxHide.sm="true">
+    <button mat-button [routerLink]="['/']">Home</button>
+    <button mat-button *ngIf="isAdmin" [routerLink]="['/admin']">Add Books</button>
+
+  </div>
+  <span class="fill-remaining-space"></span>
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item [routerLink]="['/profile']">Profile</button>
+    <button mat-menu-item (click)="logout()">Logout</button>
+  </mat-menu>
+
+  <button mat-icon-button [matMenuTriggerFor]="appMenu">
+    <img *ngIf="user.photoURL!=null; else defaultUser" class="user-image" src="{{user.photoURL}}" alt="{{user.displayName}}">
+    <ng-template #defaultUser>
+      <img class="user-image" src="assets/images/defaultUser.png" alt="">
+    </ng-template>
+  </button>
+</mat-toolbar>
+
+<div color="primary" class="example-toolbar" fxHide.xl="true" fxHide.md="true" fxHide.lg="true" style="padding: 10px; margin: 10px;">
+  <button mat-raised-button color="primary" [routerLink]="['/']">Home</button>
+  <button mat-raised-button color="primary" *ngIf="isAdmin" [routerLink]="['/admin']">Add Books</button>
+</div>

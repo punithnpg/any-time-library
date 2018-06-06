@@ -1,0 +1,36 @@
+<mat-progress-bar mode="query" *ngIf="logging"></mat-progress-bar>
+<div fxLayout="column" fxLayoutAlign="center center" class="login">
+
+<mat-card flex="50" class="card" >
+    <img mat-card-image src="assets/images/library.jpg" alt="">
+  <mat-card-header >
+      <div mat-card-avatar class="header-image"></div>
+    <mat-card-title >Login</mat-card-title>
+    <mat-card-subtitle>Welcome Anytime Library</mat-card-subtitle>
+  </mat-card-header>
+  <form class="form" (ngSubmit)="login()"  [formGroup]="loginForm">
+  <mat-card-content>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Enter your email"  name="email"   formControlName="email">
+        <mat-error *ngIf='loginForm.controls.email.invalid && loginForm.controls.email.touched'>Please enter valid email </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input type="password" matInput placeholder="Password" value=""  formControlName="password"  name="password">
+      </mat-form-field>
+
+  </mat-card-content>
+  <mat-card-actions fxLayoutAlign="space-around none" >
+    <button fxLayoutAlign=""mat-raised-button color="primary" type="submit"
+    [disabled]="!loginForm.valid" >Login</button>
+    <button mat-raised-button color="warn" (click)="GPluslogin()">G+ Login</button>
+
+  </mat-card-actions>
+</form>
+  <mat-card-footer >
+    <button mat-raised-button color="primary" style="width: 100%"  [routerLink]="['/auth/sign-up']" >Signup</button>
+  </mat-card-footer>
+</mat-card>
+
+</div>

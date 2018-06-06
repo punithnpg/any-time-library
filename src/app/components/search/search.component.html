@@ -1,0 +1,13 @@
+<form class="example-form" style="margin-left: auto; margin-right: auto;">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Search Books" aria-label="Search Books" [matAutocomplete]="auto" [formControl]="stateCtrl">
+      <mat-icon matSuffix>search</mat-icon>
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let state of filteredStates | async" [value]="state.title" [routerLink]="['/book', state.id]" >
+          <img style="vertical-align:middle;" aria-hidden src="{{state.thumbnailUrl}}" height="25" />
+          <span>{{ state.title }}</span> |
+          <!-- <small>Population: {{state.population}}</small> -->
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>

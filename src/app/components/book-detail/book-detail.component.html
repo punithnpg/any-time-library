@@ -1,0 +1,29 @@
+<app-header></app-header>
+<mat-card class="book-card" *ngFor="let b of book" >
+    <mat-card-title-group>
+        <mat-card-title>
+            {{b.title}}
+          </mat-card-title>
+          <mat-card-subtitle>
+            ISBN: {{b.isbn}}
+
+          </mat-card-subtitle>
+          <mat-card-subtitle>
+              Category: {{b.categories}}
+            </mat-card-subtitle>
+          <img mat-card-lg-image src="{{b.thumbnailUrl}}">
+
+      </mat-card-title-group>
+
+
+
+  <mat-card-content>
+      <h4>
+Author: {{b.authors}}
+      </h4>
+      <h4>
+        Description:</h4>  <p>{{b.longDescription}}</p>
+
+    </mat-card-content>
+</mat-card>
+
